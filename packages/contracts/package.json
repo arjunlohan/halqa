@@ -1,0 +1,15 @@
+{
+  "name": "@halqa/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Model tool schemas derived from the kernel's legal-act table.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@halqa/kernel": "workspace:*",
+    "@anthropic-ai/sdk": "1.11.0",
+    "zod": "4.6.7"
+  }
+}

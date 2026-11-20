@@ -1,0 +1,16 @@
+{
+  "name": "@halqa/runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Case runtime: hash-chained event log, replay, durable timers, ingest, closure listener.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@halqa/kernel": "workspace:*",
+    "@halqa/pathways": "workspace:*",
+    "@halqa/fhir": "workspace:*",
+    "zod": "4.6.7"
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "model": "claude-fable-5-2",
+  "generatedOn": "2026-11-20",
+  "via": "Written by Claude running as a Claude Code agent, given the same instructions and chart text the API call sends. Not an API response.",
+  "reviews": {
+    "Patient/syn-ahmed": {
+      "bundleHash": "dea9f4edb3db5b79d14ac78a47e21e8f711341149d0e0c11af329e4342baa853",
+      "covers": [
+        "Observation/lab-ferritin-ahmed",
+        "Observation/lab-hb-ahmed",
+        "Observation/lab-hba1c-ahmed",
+        "Condition/cond-htn-ahmed",
+        "Condition/cond-t2dm-ahmed",
+        "MedicationStatement/med-aspirin-ahmed",
+        "MedicationStatement/med-amlodipine-ahmed",
+        "MedicationStatement/med-metformin-ahmed",
+        "Encounter/enc-screen-ahmed"
+      ],
+      "draft": {
+        "summary": {
+          "text": "Active type 2 diabetes and high blood pressure; aspirin, amlodipine and metformin listed as active; ferritin and haemoglobin flagged low, long-term blood sugar (HbA1c) flagged high.",
+          "cites": [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "R7",
+            "R8"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "Aspirin 81 mg, one tablet daily, is listed as an active medicine dated 2019-01-15, and aspirin is a medicine that affects bleeding.",
+            "cites": [
+              "R6"
+            ]
+          },
+          {
+            "text": "Ferritin, a measure of the body's iron stores, was 18 µg/L on 2026-10-28 against a reference of 30 to 400 and is flagged low on the record.",
+            "cites": [
+              "R1"
+            ]
+          },
+          {
+            "text": "Haemoglobin, the oxygen-carrying part of the blood, was 12.1 g/dL on 2026-10-28 against a reference of 13.0 to 17.0 and is flagged low on the record.",
+            "cites": [
+              "R2"
+            ]
+          },
+          {
+            "text": "Type 2 diabetes is recorded as an active condition dated 2016-03-10, and diabetes matters when fasting and bowel preparation are planned.",
+            "cites": [
+              "R5"
+            ]
+          },
+          {
+            "text": "Metformin 1 g, one tablet twice a day, is listed as an active medicine dated 2016-03-10, which the team takes into account when fasting and bowel preparation are planned.",
+            "cites": [
+              "R8"
+            ]
+          },
+          {
+            "text": "HbA1c, a blood test of longer-term sugar control, was 7.4 % on 2026-10-28 against a reference of below 6.5 and is flagged high on the record.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "Essential hypertension (high blood pressure) is recorded as an active condition dated 2018-09-02, which the team giving sedation would want to know.",
+            "cites": [
+              "R4"
+            ]
+          },
+          {
+            "text": "Amlodipine 5 mg, one tablet daily, is listed as an active medicine dated 2018-09-02, part of the medicine list the team reviews before sedation.",
+            "cites": [
+              "R7"
+            ]
+          }
+        ],
+        "toCheck": [
+          {
+            "text": "Aspirin 81 mg, one tablet daily, is an active medicine, which matters because aspirin affects bleeding if polyps or tissue samples are removed during the colonoscopy.",
+            "cites": [
+              "R6"
+            ]
+          },
+          {
+            "text": "Ferritin 18 µg/L and haemoglobin 12.1 g/dL are both flagged low on the record dated 2026-10-28, which matters because low iron and haemoglobin readings bear on a positive stool test and on readiness for sedation.",
+            "cites": [
+              "R1",
+              "R2"
+            ]
+          },
+          {
+            "text": "Type 2 diabetes is active, metformin 1 g twice a day is an active medicine and the long-term blood sugar result (HbA1c) of 7.4 % is flagged high, which matters because fasting and bowel preparation affect blood sugar.",
+            "cites": [
+              "R3",
+              "R5",
+              "R8"
+            ]
+          }
+        ],
+        "notFound": [
+          "blood-thinning medicines other than aspirin",
+          "previous colonoscopy or other bowel investigation",
+          "family history of bowel cancer",
+          "allergies",
+          "kidney disease or kidney function results",
+          "heart or lung conditions other than high blood pressure"
+        ]
+      }
+    },
+    "Patient/syn-fatima": {
+      "bundleHash": "0a3e9e09f29ae964ef2a98d81bfb121eeafb8178b417cb3c578bc5eb6776a176",
+      "covers": [
+        "Observation/lab-hb-fatima",
+        "Condition/cond-hypothyroid-fatima",
+        "MedicationStatement/med-levothyroxine-fatima",
+        "FamilyMemberHistory/fam-fatima",
+        "Encounter/enc-screen-fatima"
+      ],
+      "draft": {
+        "summary": {
+          "text": "Father had colorectal (bowel) cancer at 62; an underactive thyroid is recorded as active, with levothyroxine listed; haemoglobin was 12.8 g/dL on 2026-10-19 with no flag.",
+          "cites": [
+            "R1",
+            "R2",
+            "R3",
+            "R4"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "A family history record dated 2024-02-11 states that the patient's father had colorectal (bowel) cancer at 62.",
+            "cites": [
+              "R4"
+            ]
+          },
+          {
+            "text": "Haemoglobin, the oxygen-carrying part of the blood, was 12.8 g/dL on 2026-10-19; the record gives a reference of 12.0 to 15.5 and carries no flag.",
+            "cites": [
+              "R1"
+            ]
+          },
+          {
+            "text": "Hypothyroidism (an underactive thyroid) is recorded as an active condition dated 2012-05-20, part of the medical history the team reviews before sedation.",
+            "cites": [
+              "R2"
+            ]
+          },
+          {
+            "text": "Levothyroxine 75 microgram, one tablet daily, is listed as an active medicine dated 2012-05-20, part of the medicine list the team reviews before the procedure.",
+            "cites": [
+              "R3"
+            ]
+          }
+        ],
+        "toCheck": [],
+        "notFound": [
+          "medicines that affect bleeding",
+          "previous colonoscopy or other bowel investigation",
+          "ferritin or other iron results",
+          "allergies",
+          "heart, lung or kidney conditions",
+          "diabetes"
+        ]
+      }
+    },
+    "Patient/syn-john": {
+      "bundleHash": "95206cdfa68d576806f3bde61a6d5b341726c99d1a73ea10792c5fc4826fd3d6",
+      "covers": [
+        "Observation/lab-hb-john",
+        "Condition/cond-af-john",
+        "MedicationStatement/med-apixaban-john",
+        "MedicationStatement/med-bisoprolol-john",
+        "Procedure/proc-col2015-john",
+        "Encounter/enc-screen-john"
+      ],
+      "draft": {
+        "summary": {
+          "text": "Atrial fibrillation is active; the blood thinner apixaban and bisoprolol are active medicines; a colonoscopy was completed on 2015-04-22; haemoglobin was 14.2 g/dL on 2026-11-02 with no flag.",
+          "cites": [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "Apixaban 5 mg, one tablet twice a day, is listed as an active medicine dated 2021-07-04, and apixaban is a blood-thinning medicine that affects bleeding.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "Atrial fibrillation (an irregular heart rhythm) is recorded as an active condition dated 2021-07-04, which the team giving sedation would want to know.",
+            "cites": [
+              "R2"
+            ]
+          },
+          {
+            "text": "Bisoprolol 2.5 mg, one tablet daily, is listed as an active medicine dated 2021-07-04, a heart medicine the team giving sedation would want to know about.",
+            "cites": [
+              "R4"
+            ]
+          },
+          {
+            "text": "A colonoscopy is recorded as completed on 2015-04-22, and the record gives no findings.",
+            "cites": [
+              "R5"
+            ]
+          },
+          {
+            "text": "Haemoglobin, the oxygen-carrying part of the blood, was 14.2 g/dL on 2026-11-02; the record gives a reference of 13.0 to 17.0 and carries no flag.",
+            "cites": [
+              "R1"
+            ]
+          }
+        ],
+        "toCheck": [
+          {
+            "text": "Apixaban 5 mg, one tablet twice a day, is an active medicine, which matters because a blood-thinning medicine affects bleeding if polyps or tissue samples are removed during the colonoscopy.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "Atrial fibrillation is recorded as active alongside apixaban, which matters to how sedation is planned and to the clinician's view of the blood-thinning medicine around the procedure.",
+            "cites": [
+              "R2",
+              "R3"
+            ]
+          },
+          {
+            "text": "The colonoscopy completed on 2015-04-22 is recorded without findings, so the earlier report is worth a clinician's look because past findings inform this procedure.",
+            "cites": [
+              "R5"
+            ]
+          }
+        ],
+        "notFound": [
+          "family history of bowel cancer",
+          "allergies",
+          "ferritin or other iron results",
+          "findings or report from the 2015 colonoscopy",
+          "kidney disease or kidney function results",
+          "diabetes",
+          "lung conditions"
+        ]
+      }
+    },
+    "Patient/syn-priya": {
+      "bundleHash": "b393d8630ef98b26d21198d57da1f71f20e4de1122467edeab3708a5fee6c46a",
+      "covers": [
+        "Observation/lab-ferritin-priya",
+        "Observation/lab-hb-priya",
+        "Condition/cond-ida-priya",
+        "MedicationStatement/med-iron-priya",
+        "Encounter/enc-screen-priya"
+      ],
+      "draft": {
+        "summary": {
+          "text": "Iron deficiency anaemia is active; ferrous sulfate (iron tablets) is an active medicine; ferritin 9 µg/L and haemoglobin 10.4 g/dL are both flagged low on 2026-11-10.",
+          "cites": [
+            "R1",
+            "R2",
+            "R3",
+            "R4"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "Iron deficiency anaemia (a low blood count from lack of iron) is recorded as an active condition dated 2026-09-08.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "Ferritin, a measure of the body's iron stores, was 9 µg/L on 2026-11-10 against a reference of 30 to 400 and is flagged low on the record.",
+            "cites": [
+              "R1"
+            ]
+          },
+          {
+            "text": "Haemoglobin, the oxygen-carrying part of the blood, was 10.4 g/dL on 2026-11-10 against a reference of 12.0 to 15.5 and is flagged low on the record.",
+            "cites": [
+              "R2"
+            ]
+          },
+          {
+            "text": "Ferrous sulfate 200 mg (an iron tablet), one tablet daily, is listed as an active medicine dated 2026-09-08, and iron tablets affect bowel preparation.",
+            "cites": [
+              "R4"
+            ]
+          }
+        ],
+        "toCheck": [
+          {
+            "text": "Haemoglobin 10.4 g/dL and ferritin 9 µg/L are both flagged low on the record dated 2026-11-10, which matters because low iron and haemoglobin readings bear on a positive stool test and on readiness for sedation.",
+            "cites": [
+              "R1",
+              "R2"
+            ]
+          },
+          {
+            "text": "Ferrous sulfate 200 mg, one tablet daily, is an active medicine, which matters because iron tablets darken the stool and can make the bowel lining harder to see during the colonoscopy.",
+            "cites": [
+              "R4"
+            ]
+          }
+        ],
+        "notFound": [
+          "medicines that affect bleeding",
+          "previous colonoscopy or other bowel investigation",
+          "family history of bowel cancer",
+          "allergies",
+          "heart, lung or kidney conditions",
+          "diabetes"
+        ]
+      }
+    },
+    "Patient/syn-khalid": {
+      "bundleHash": "f90ab131956dcc8f19a3ba9496f2f366466dcc8f97a009254179ba0deb4fcd97",
+      "covers": [
+        "Observation/lab-egfr-khalid",
+        "Observation/lab-hb-khalid",
+        "Condition/cond-ckd3-khalid",
+        "Condition/cond-htn-khalid",
+        "MedicationStatement/med-atorvastatin-khalid",
+        "MedicationStatement/med-ramipril-khalid",
+        "Procedure/proc-col2021-khalid",
+        "Encounter/enc-screen-khalid"
+      ],
+      "draft": {
+        "summary": {
+          "text": "Active chronic kidney disease stage 3 and high blood pressure; kidney function result flagged low on 2026-10-12; colonoscopy completed 2021-03-16; ramipril and atorvastatin listed as active.",
+          "cites": [
+            "R1",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "R7"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "Chronic kidney disease stage 3 is recorded as an active condition dated 2022-11-30, and kidney disease affects which bowel preparation is suitable.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "Estimated glomerular filtration rate, a blood measure of kidney function, was 48 mL/min/1.73 m² on 2026-10-12 against a reference of above 60 and is flagged low on the record.",
+            "cites": [
+              "R1"
+            ]
+          },
+          {
+            "text": "A colonoscopy is recorded as completed on 2021-03-16, and the record gives no findings.",
+            "cites": [
+              "R7"
+            ]
+          },
+          {
+            "text": "Haemoglobin, the oxygen-carrying part of the blood, was 13.4 g/dL on 2026-10-12; the record gives a reference of 13.0 to 17.0 and carries no flag.",
+            "cites": [
+              "R2"
+            ]
+          },
+          {
+            "text": "Ramipril 5 mg, one capsule daily, is listed as an active medicine dated 2010-01-18, a blood pressure medicine the team takes into account because bowel preparation causes fluid loss.",
+            "cites": [
+              "R6"
+            ]
+          },
+          {
+            "text": "Essential hypertension (high blood pressure) is recorded as an active condition dated 2010-01-18, which the team giving sedation would want to know.",
+            "cites": [
+              "R4"
+            ]
+          },
+          {
+            "text": "Atorvastatin 20 mg, one tablet at night, is listed as an active medicine dated 2015-06-01, part of the medicine list the team reviews before the procedure.",
+            "cites": [
+              "R5"
+            ]
+          }
+        ],
+        "toCheck": [
+          {
+            "text": "Chronic kidney disease stage 3 is active and the kidney function result of 48 mL/min/1.73 m² is flagged low on the record dated 2026-10-12, which matters because kidney function affects which bowel preparation is suitable.",
+            "cites": [
+              "R1",
+              "R3"
+            ]
+          },
+          {
+            "text": "Ramipril 5 mg, one capsule daily, is an active medicine alongside the kidney disease record and the kidney result flagged low, which matters because bowel preparation causes fluid loss that can affect the kidneys.",
+            "cites": [
+              "R1",
+              "R3",
+              "R6"
+            ]
+          },
+          {
+            "text": "The colonoscopy completed on 2021-03-16 is recorded without findings, so the earlier report is worth a clinician's look because past findings inform this procedure.",
+            "cites": [
+              "R7"
+            ]
+          }
+        ],
+        "notFound": [
+          "medicines that affect bleeding",
+          "family history of bowel cancer",
+          "allergies",
+          "ferritin or other iron results",
+          "findings or report from the 2021 colonoscopy",
+          "diabetes",
+          "heart or lung conditions other than high blood pressure"
+        ]
+      }
+    },
+    "Patient/syn-sara": {
+      "bundleHash": "b7a95fedfadec8252002cb5104f37ece80e17d16f62e39633e0d0beb2503f3c1",
+      "covers": [
+        "Observation/lab-hb-sara",
+        "Encounter/enc-screen-sara"
+      ],
+      "draft": {
+        "summary": {
+          "text": "The chart holds two records: a haemoglobin result of 13.1 g/dL on 2026-10-30 with no flag, and a periodic health screening visit the same day.",
+          "cites": [
+            "R1",
+            "R2"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "Haemoglobin, the oxygen-carrying part of the blood, was 13.1 g/dL on 2026-10-30; the record gives a reference of 12.0 to 15.5 and carries no flag.",
+            "cites": [
+              "R1"
+            ]
+          }
+        ],
+        "toCheck": [],
+        "notFound": [
+          "medicines, including any that affect bleeding",
+          "conditions that affect sedation or bowel preparation",
+          "previous colonoscopy or other bowel investigation",
+          "family history of bowel cancer",
+          "ferritin or other iron results",
+          "allergies"
+        ]
+      }
+    },
+    "Patient/syn-yusuf": {
+      "bundleHash": "8dc19c1c2b2d4d36f2bde6d694a1e9603a442247194771a5661da8657e24ee8b",
+      "covers": [
+        "Observation/lab-hb-yusuf",
+        "Condition/cond-copd-yusuf",
+        "MedicationStatement/med-tiotropium-yusuf",
+        "Encounter/enc-screen-yusuf"
+      ],
+      "draft": {
+        "summary": {
+          "text": "Records show active chronic obstructive pulmonary disease, a daily tiotropium inhaler, haemoglobin 14.8 g/dL on 2026-11-05 and a health screening visit that day.",
+          "cites": [
+            "R1",
+            "R2",
+            "R3",
+            "R4"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "Chronic obstructive pulmonary disease, a long-term lung condition, is recorded as active with the date 2019-02-14, and a lung condition matters to the team when planning sedation.",
+            "cites": [
+              "R2"
+            ]
+          },
+          {
+            "text": "Tiotropium 18 microgram inhaler, one inhalation daily, is recorded as an active medicine with the date 2019-02-14, which the team would want on the list of current medicines.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "Haemoglobin, a blood count result the team checks for signs of blood loss, was 14.8 g/dL on 2026-11-05, and the record gives a reference of 13.0 to 17.0.",
+            "cites": [
+              "R1"
+            ]
+          }
+        ],
+        "toCheck": [
+          {
+            "text": "The active chronic obstructive pulmonary disease record dated 2019-02-14 is worth a clinician's look because a long-term lung condition bears on whether and how sedation is given during the colonoscopy.",
+            "cites": [
+              "R2"
+            ]
+          }
+        ],
+        "notFound": [
+          "medicines that affect bleeding, such as blood thinners or antiplatelet medicines",
+          "how severe the lung condition is, or any breathing test results or home oxygen use",
+          "diabetes, heart or kidney conditions that affect sedation or bowel preparation",
+          "iron blood results (such as ferritin)",
+          "previous colonoscopy or other bowel investigation",
+          "family history of bowel cancer",
+          "allergies"
+        ]
+      }
+    },
+    "Patient/syn-mona": {
+      "bundleHash": "a171da092af4c55922c6f18dee936321c4da1d0c6d377ffea9fa2e8ce1444d49",
+      "covers": [
+        "Observation/lab-hb-mona",
+        "Observation/lab-hba1c-mona",
+        "Condition/cond-t2dm-mona",
+        "MedicationStatement/med-empagliflozin-mona",
+        "Encounter/enc-screen-mona"
+      ],
+      "draft": {
+        "summary": {
+          "text": "Records show active type 2 diabetes, a daily empagliflozin tablet, a blood sugar result (HbA1c) flagged high on 2026-11-08, and haemoglobin 12.9 g/dL that day.",
+          "cites": [
+            "R1",
+            "R2",
+            "R3",
+            "R4"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "Type 2 diabetes is recorded as active with the date 2020-08-21, and diabetes matters to the team when planning fasting and bowel preparation.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "Empagliflozin 10 mg tablet, one tablet daily, is recorded as an active medicine with the date 2022-03-09, and it is a diabetes medicine that the team takes into account around fasting and bowel preparation.",
+            "cites": [
+              "R4"
+            ]
+          },
+          {
+            "text": "HbA1c, a blood test of longer-term blood sugar, was 6.9 % on 2026-11-08 against a reference of below 6.5, and it is flagged high on the record.",
+            "cites": [
+              "R2"
+            ]
+          },
+          {
+            "text": "Haemoglobin, a blood count result the team checks for signs of blood loss, was 12.9 g/dL on 2026-11-08, and the record gives a reference of 12.0 to 15.5.",
+            "cites": [
+              "R1"
+            ]
+          }
+        ],
+        "toCheck": [
+          {
+            "text": "The active empagliflozin record (10 mg tablet, one daily, dated 2022-03-09) is worth a clinician's look because this type of diabetes medicine needs particular attention when a person is fasting and taking bowel preparation.",
+            "cites": [
+              "R4"
+            ]
+          },
+          {
+            "text": "The active type 2 diabetes record and the HbA1c result of 6.9 % on 2026-11-08, which is flagged high on the record, are worth a clinician's look because blood sugar control matters during fasting and bowel preparation.",
+            "cites": [
+              "R2",
+              "R3"
+            ]
+          }
+        ],
+        "notFound": [
+          "medicines that affect bleeding, such as blood thinners or antiplatelet medicines",
+          "insulin or diabetes medicines other than empagliflozin",
+          "heart or lung conditions that affect sedation",
+          "kidney function results",
+          "iron blood results (such as ferritin)",
+          "previous colonoscopy or other bowel investigation",
+          "family history of bowel cancer",
+          "allergies"
+        ]
+      }
+    },
+    "Patient/syn-omar": {
+      "bundleHash": "9be97086a76f8ea9ff8d599e2f8056f88e22304e1a99f2ae7c8fefe4d3ad855b",
+      "covers": [
+        "Observation/lab-hb-omar",
+        "Condition/cond-cad-omar",
+        "MedicationStatement/med-clopidogrel-omar",
+        "MedicationStatement/med-rosuvastatin-omar",
+        "Procedure/proc-stent2023-omar",
+        "Encounter/enc-screen-omar"
+      ],
+      "draft": {
+        "summary": {
+          "text": "Records show active coronary arteriosclerosis, a coronary artery stent placed 2023-06-04, active clopidogrel and rosuvastatin tablets, and haemoglobin 15.1 g/dL on 2026-11-11.",
+          "cites": [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5"
+          ]
+        },
+        "relevant": [
+          {
+            "text": "Clopidogrel 75 mg tablet, one tablet daily, is recorded as an active medicine with the date 2023-06-04, and it is a medicine that affects bleeding.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "Placement of a stent in a coronary artery (an artery of the heart) is recorded as completed on 2023-06-04, a heart procedure the team would want to know about when planning sedation.",
+            "cites": [
+              "R5"
+            ]
+          },
+          {
+            "text": "Coronary arteriosclerosis, a hardening of the heart's arteries, is recorded as active with the date 2023-06-02, and a heart condition matters to the team when planning sedation.",
+            "cites": [
+              "R2"
+            ]
+          },
+          {
+            "text": "Rosuvastatin 10 mg tablet, one tablet at night, is recorded as an active medicine with the date 2023-06-04, which the team would want on the list of current medicines.",
+            "cites": [
+              "R4"
+            ]
+          },
+          {
+            "text": "Haemoglobin, a blood count result the team checks for signs of blood loss, was 15.1 g/dL on 2026-11-11, and the record gives a reference of 13.0 to 17.0.",
+            "cites": [
+              "R1"
+            ]
+          }
+        ],
+        "toCheck": [
+          {
+            "text": "The active clopidogrel record (75 mg tablet, one daily, dated 2023-06-04) is worth a clinician's look because a medicine that affects bleeding matters if polyps or tissue samples are removed during the colonoscopy.",
+            "cites": [
+              "R3"
+            ]
+          },
+          {
+            "text": "The clopidogrel record carries the same date, 2023-06-04, as the coronary artery stent procedure, and the coronary arteriosclerosis record is active, so a clinician would want to see the heart history alongside the medicine when weighing bleeding and sedation for the procedure.",
+            "cites": [
+              "R2",
+              "R3",
+              "R5"
+            ]
+          }
+        ],
+        "notFound": [
+          "aspirin, blood thinners or other medicines that affect bleeding besides clopidogrel",
+          "any note on how long clopidogrel is meant to continue",
+          "lung conditions or diabetes that affect sedation or bowel preparation",
+          "kidney function results",
+          "iron blood results (such as ferritin)",
+          "previous colonoscopy or other bowel investigation",
+          "family history of bowel cancer",
+          "allergies"
+        ]
+      }
+    }
+  }
+}

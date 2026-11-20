@@ -1,0 +1,13 @@
+{
+  "name": "@halqa/pathways",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Typed pathway files. A pathway is data the compiler checks.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@halqa/kernel": "workspace:*"
+  }
+}

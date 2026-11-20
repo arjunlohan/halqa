@@ -1,0 +1,30 @@
+{
+  "name": "halqa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Halqa: a screening-to-care closure engine. Prototype on synthetic data.",
+  "packageManager": "pnpm@9.10.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @halqa/api --filter @halqa/web dev",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p apps/web/tsconfig.json",
+    "proof": "tsc --noEmit -p tsconfig.json && tsc -p packages/kernel/tsconfig.build.json && node packages/kernel/dist/kernel.prop.test.js",
+    "test": "NODE_OPTIONS=--disable-warning=ExperimentalWarning vitest run",
+    "lint": "biome lint .",
+    "sim": "tsx packages/evals/src/cli.ts",
+    "check": "pnpm typecheck && pnpm lint && pnpm proof && pnpm test",
+    "mutations": "python3 -I scripts/mutations.py",
+    "reactbits:prep": "node scripts/reactbits-prep.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.8",
+    "@types/node": "^25",
+    "fast-check": "4.10.3",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.1.1"
+  }
+}

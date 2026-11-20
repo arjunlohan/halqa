@@ -1,0 +1,13 @@
+{
+  "name": "@halqa/catalogue",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Approved wording per act and language, and the renderer.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@halqa/kernel": "workspace:*"
+  }
+}

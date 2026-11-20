@@ -1,0 +1,19 @@
+{
+  "name": "@halqa/voice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Closed-catalogue call engine: ear text in, legal act out, approved wording spoken.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@halqa/kernel": "workspace:*",
+    "@halqa/catalogue": "workspace:*",
+    "@halqa/contracts": "workspace:*",
+    "@halqa/runtime": "workspace:*",
+    "@halqa/fhir": "workspace:*",
+    "@anthropic-ai/sdk": "1.11.0",
+    "zod": "4.6.7"
+  }
+}

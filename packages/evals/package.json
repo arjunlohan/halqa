@@ -1,0 +1,11 @@
+{
+  "name": "@halqa/evals",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pathway simulation and dialogue suites.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {}
+}

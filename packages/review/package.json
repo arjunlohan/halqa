@@ -1,0 +1,16 @@
+{
+  "name": "@halqa/review",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Claude's review of a patient's chart for staff: cited statements, checked against the records.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@halqa/kernel": "workspace:*",
+    "@halqa/fhir": "workspace:*",
+    "@anthropic-ai/sdk": "1.11.0",
+    "zod": "4.6.7"
+  }
+}

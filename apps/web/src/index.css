@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* shadcn/ui tokens, set once for Halqa's dark interface. Hex values mirror styles.css. */
+:root {
+  --radius: 0.625rem;
+  --background: #05090d;
+  --foreground: #ecf3f1;
+  --card: #0a1117;
+  --card-foreground: #ecf3f1;
+  --popover: #0c151b;
+  --popover-foreground: #ecf3f1;
+  --primary: #2dd4bf;
+  --primary-foreground: #03211d;
+  --secondary: #111b22;
+  --secondary-foreground: #ecf3f1;
+  --muted: #0e171d;
+  --muted-foreground: #8b9895;
+  /* Named apart from the legacy stylesheet's `--accent` (the teal), which is loaded after this file. */
+  --ui-accent: #13202a;
+  --ui-accent-foreground: #ecf3f1;
+  --destructive: #ff6b6b;
+  --border: rgb(255 255 255 / 10%);
+  --input: rgb(255 255 255 / 15%);
+  --ring: #2dd4bf;
+  --chart-1: #3987e5;
+  --chart-2: #d95926;
+  --chart-3: #199e70;
+  --chart-4: #f6c160;
+  --chart-5: #a78bfa;
+  --sidebar: #070c11;
+  --sidebar-foreground: #c9d4d1;
+  --sidebar-primary: #2dd4bf;
+  --sidebar-primary-foreground: #03211d;
+  --sidebar-accent: #111b22;
+  --sidebar-accent-foreground: #ecf3f1;
+  --sidebar-border: rgb(255 255 255 / 8%);
+  --sidebar-ring: #2dd4bf;
+}
+
+@theme inline {
+  --font-sans: "Geist Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", "Iowan Old Style", Palatino, Georgia, serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, "SF Mono", Menlo, monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--ui-accent);
+  --color-accent-foreground: var(--ui-accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  /* Status colours, always paired with a word. */
+  --color-good: #5fe39b;
+  --color-warn: #f6c160;
+  --color-crit: #ff8080;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+}
+
+/* Console-only pieces that utilities do not express well. */
+@layer components {
+  /* A chart row briefly lit when a review statement that cites it is opened. */
+  .cite-flash {
+    animation: cite-flash 1600ms var(--ease-out, ease-out);
+  }
+  @keyframes cite-flash {
+    0%,
+    35% {
+      background-color: rgb(45 212 191 / 16%);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cite-flash {
+      animation: none;
+      outline: 1px solid rgb(45 212 191 / 60%);
+    }
+  }
+}

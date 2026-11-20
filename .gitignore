@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.local
+data/
+tasks/
+
+# Submission pack and recording tools (video, deck, screenshots): kept local
+submission/
+# Per-machine Claude settings
+.claude/

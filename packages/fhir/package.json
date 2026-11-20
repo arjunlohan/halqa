@@ -1,0 +1,14 @@
+{
+  "name": "@halqa/fhir",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Zod schemas for the FHIR R4 subset and mappers to kernel types.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@halqa/kernel": "workspace:*",
+    "zod": "4.6.7"
+  }
+}
